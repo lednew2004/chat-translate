@@ -13,3 +13,4 @@ node_modules/
 
 # Ignora diretórios de backup
 *~
+nano .gitignore
