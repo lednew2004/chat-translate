@@ -20,7 +20,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Diretório público
-app.use(express.static('public'));
+app.use(express.static('../public')); 
 
 let messages = [];
 
@@ -69,6 +69,6 @@ io.on('connection', (socket) => {
 });
 
 // Porta em que o servidor vai rodar
-server.listen(3000, () => {
-  console.log('Servidor rodando em http://localhost:3000');
+server.listen(8080, () => {
+  console.log('Servidor rodando em http://localhost:8080');
 });
