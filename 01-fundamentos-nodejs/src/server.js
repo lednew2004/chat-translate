@@ -20,7 +20,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Diretório público
-app.use(express.static('../public')); 
+app.use(express.static('public')); 
 
 let messages = [];
 
