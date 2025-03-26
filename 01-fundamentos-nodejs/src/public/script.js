@@ -1,7 +1,7 @@
 // script.js
 
 // Conectar ao servidor Socket.IO
-const socket = io();
+const socket = io('https://chat-translate-git-main-chat-backends-projects.vercel.app');
 
 // Referências aos elementos
 const form = document.getElementById('chat');
